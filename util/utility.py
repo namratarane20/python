@@ -32,7 +32,7 @@ def prime(start, stop):
     kir(arr1)  # calling the method
 
 
-def lax(arr):
+def palin(arr):
     array_palindrome = []
     for i in range(2, len(arr), 1):              # LOOP
         rev = temp = number = 0                  # initialization
@@ -47,7 +47,7 @@ def lax(arr):
     print("palindrome numbers", array_palindrome)
 
 
-def kir(arr1):
+def arr_(arr1):
     arr2 = []                                        # empty list to store the anagram elements
     for i in range(len(arr1)):                      # outer loop
         for j in range(i + 1, len(arr1), 1):        # innerloop
@@ -58,7 +58,7 @@ def kir(arr1):
                 pass
     print("anagram number", arr2)
 
-    lax(arr)
+    palin(arr)
 
 
 def question(low, high):
